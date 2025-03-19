@@ -1,0 +1,15 @@
+#installation d'express et des types: 
+npm init -y
+npm install express
+npm install --save-dev typescript ts-node @types/express
+
+#Lancement de l'api 
+npx ts-node src/web/app.ts
+
+# install des tests unitaires :
+npm install --save-dev jest ts-jest @types/jest
+npm install --save-dev mock-fs @types/mock-fs
+
+#Lancer les testunits dans le répertoire src:
+cd src
+npx jest
