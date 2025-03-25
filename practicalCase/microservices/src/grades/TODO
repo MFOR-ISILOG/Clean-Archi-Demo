@@ -1,6 +1,7 @@
 Service de notes à créer.
 Il doit pouvoir :
 - Retourner les notes d'un étudiant
+- Retourner la moyenne d'un étudiant
 - Retourner la moyenne de la classe
 
 Si on a le temps :

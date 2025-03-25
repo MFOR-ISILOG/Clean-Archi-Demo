@@ -47,21 +47,3 @@ function goBack() {
     document.getElementById("student-list").classList.remove("hidden");
     document.getElementById("student-details").classList.add("hidden");
 }
-
-function loadStudentAverageGrade(id) {
-    fetch(`http://localhost:3020/api/grades/${id}/average`)
-        .then(response => response.json())
-        .then(grade => {
-            const averageGradeItem = document.getElementById(`student-average-grade`);
-            averageGradeItem.textContent = `Average grade : ${grade.average}`;
-            averageGradeItem.classList.remove("hidden")
-        })
-        .catch(error => {
-            console.error("Erreur lors du chargement de la moyenne de l'étudiant:", error);
-            document.getElementById(`student-average-grade`).classList.add("hidden")
-        });
-}
-
-function onAverageGradeClick(id) {
-        console.log(id); 
-}
