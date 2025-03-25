@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1 { text-align: center; }
+.student-list { list-style: none; padding: 0; }
+.student-list li { padding: 10px; border-bottom: 1px solid #ccc; display: flex; align-items: center; justify-content: space-between; }
+.student-list img { width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; }
+.student-list a { color: blue; text-decoration: none; cursor: pointer; }
+.student-list a:hover { text-decoration: underline; }
+.student-details { margin-top: 20px; }
+.hidden { display: none; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid black; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
