@@ -1,9 +1,58 @@
 [
-    { "id": "e5567b", "firstname": "Beatrice", "lastname": "Worsley" },
-    { "id": "e4976c", "firstname": "Claudie", "lastname": "Haigneré" },
-    { "id": "e1232b", "firstname": "Barbara", "lastname": "Chase" },
-    { "id": "e9886a", "firstname": "Anaïs", "lastname": "Nin" },
-    { "id": "e9845b", "firstname": "Bella", "lastname": "Guerin" },
-    { "id": "e9875c", "firstname": "Clara", "lastname": "Zetkin" },
-    { "id": "e5412f", "firstname": "Fatoumata", "lastname": "Kébé" }
-  ]
+  {
+    "id": "e5567b",
+    "firstname": "Beatrice",
+    "lastname": "Worsley",
+    "age": 38,
+    "image": "https://randomuser.me/api/portraits/women/1.jpg",
+    "location": "Toronto, Canada"
+  },
+  {
+    "id": "e4976c",
+    "firstname": "Claudie",
+    "lastname": "Haigneré",
+    "age": 50,
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "location": "Paris, France"
+  },
+  {
+    "id": "e1232b",
+    "firstname": "Barbara",
+    "lastname": "Chase",
+    "age": 45,
+    "image": "https://randomuser.me/api/portraits/women/3.jpg",
+    "location": "New York, USA"
+  },
+  {
+    "id": "e9886a",
+    "firstname": "Anaïs",
+    "lastname": "Nin",
+    "age": 42,
+    "image": "https://randomuser.me/api/portraits/women/4.jpg",
+    "location": "Barcelona, Spain"
+  },
+  {
+    "id": "e9845b",
+    "firstname": "Bella",
+    "lastname": "Guerin",
+    "age": 35,
+    "image": "https://randomuser.me/api/portraits/women/5.jpg",
+    "location": "Melbourne, Australia"
+  },
+  {
+    "id": "e9875c",
+    "firstname": "Clara",
+    "lastname": "Zetkin",
+    "age": 60,
+    "image": "https://randomuser.me/api/portraits/women/6.jpg",
+    "location": "Berlin, Germany"
+  },
+  {
+    "id": "e5412f",
+    "firstname": "Fatoumata",
+    "lastname": "Kébé",
+    "age": 30,
+    "image": "https://randomuser.me/api/portraits/women/7.jpg",
+    "location": "Dakar, Senegal"
+  }
+]
