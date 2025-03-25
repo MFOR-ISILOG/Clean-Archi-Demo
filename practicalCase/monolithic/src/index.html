@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des étudiants</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Liste des étudiants (Moyenne de la classe : <span id="class-average">...</span>/20)</h1>
+    <ul id="student-list" class="student-list"></ul>
+    
+    <div id="student-details" class="student-details hidden">
+        <h2 id="student-name"></h2>
+        <img id="student-image" src="" alt="Photo de l'étudiant" width="100">
+        <p><strong>Âge:</strong> <span id="student-age"></span></p>
+        <p><strong>Localisation:</strong> <span id="student-location"></span></p>
+        <p><strong>Moyenne:</strong> <a href="#" id="student-average" onclick="showGrades(event)"></a></p>
+        <table id="grades-table" class="hidden">
+            <thead>
+                <tr><th>Matière</th><th>Note</th><th>Professeur</th></tr>
+            </thead>
+            <tbody id="grades-body"></tbody>
+        </table>
+        <button onclick="goBack()">Retour</button>
+    </div>
+</body>
+</html>
