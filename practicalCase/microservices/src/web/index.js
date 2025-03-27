@@ -1,5 +1,7 @@
+const apiBaseUrl = "http://localhost:3010/api/";
+
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("http://localhost:3010/api/students")
+    fetch(`${apiBaseUrl}students`)
         .then(response => response.json())
         .then(students => {
             const studentList = document.getElementById("student-list");
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadStudentDetails(id) {
-    fetch(`http://localhost:3010/api/student/${id}`)
+    fetch(`${apiBaseUrl}student/${id}`)
         .then(response => response.json())
         .then(student => {
             document.getElementById("student-name").textContent = `${student.firstname} ${student.lastname}`;
@@ -32,13 +34,6 @@ function loadStudentDetails(id) {
             document.getElementById("student-location").textContent = student.location;
             document.getElementById("student-list").classList.add("hidden");
             document.getElementById("student-details").classList.remove("hidden");
-
-            const averageGradeDetailBtn = document.getElementById("average-grade-detail");
-            // Clear event listener
-            averageGradeDetailBtn.replaceWith(averageGradeDetailBtn.cloneNode(true))
-            document.getElementById("average-grade-detail").addEventListener("click", () => { 
-                console.log(id)
-            });
         })
         .catch(error => console.error("Erreur lors du chargement des détails de l'étudiant:", error));
 }
